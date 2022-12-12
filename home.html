@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotList Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="body">
+        <div id="header">
+            <h1 id="name">{userName}</h1>
+            <p> - </p>
+            <p id="sair">Sair</p>
+        </div>
+    
+        <div id="app">
+            <div id="selectFile">
+                <label id="labelFile" for="inputFile">Selecione um arquivo</label>
+                <input id="inputFile"  type="file" name="inputFile">
+            </div>
+            <div id = "border"></div>
+            <div id="text">
+                <input id="nome" placeholder="Título da Playlist" required>
+                
+                <textarea id="textarea" placeholder="Lista de músicas separadas por (Enter)"></textarea>
+                <button id="sendButton">Enviar Músicas</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>
