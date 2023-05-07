@@ -7,6 +7,6 @@ document.getElementById("botao").addEventListener("click", ()=>{
       response_type: 'token',
       client_id: data["client_id"],
       scope: data["scope"],
-      redirect_uri: "https://spotlist.herokuapp.com/home.html"    
+      redirect_uri: "https://listplaylist.herokuapp.com/home.html"    
     }).toString())
 })
